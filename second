@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script language="javascript">
+var num1=window.prompt("请输入第一个num");
+var num1=window.prompt("请输入第二个num");
+var operator=window.prompt("请输入运算符");
+num1=parsefloat(num1);
+num2=parsefloat(num2);
+
+//如何调用函数
+document.write("res="+jisuan(num1,num2,operator));
+
+//自定义函数
+function jisuan(num1,num2,operator){//特别强调参数名请不要带var
+var res=0;
+	if(operator=="+"){
+		res=num1+num2;
+		}else if (operator=="-"){
+			res=num1-num2;
+		}else if (operator=='*'){
+			res=num1*num2;
+		}else{
+			res=num1/num2;}
+			return res;
+}
+
+
+
+</script>
+</head>
+
+<body>
+</body>
+</html>
